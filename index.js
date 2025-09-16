@@ -184,5 +184,5 @@ const idol = [
   "이서"
 ]
 console.log("좋아하는 멤버:", idol[0]);
-console.log("마지막 멤버:", idol.length);
+console.log("마지막 멤버:", idol.length -1);
 
