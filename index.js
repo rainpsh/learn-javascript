@@ -84,7 +84,7 @@ sayHello("박성혜");
 console.log("================================================");
 
 // 조건문
-const score = 59;
+const score = 89;
 if(score>=60) {
   console.log("합격"); 
   // 조건식이 true인 경우에 실행할 코드
@@ -92,4 +92,55 @@ if(score>=60) {
   // 조건식이 false인 경우에 실행할 코드
   console.log("불합격"); 
 };
-console.log("if문 종료")
+console.log("if문 종료");
+
+let grade = "";
+if(score >= 90) {
+  grade = "A등급";
+} else if(score >= 80){
+  grade = "B등급";
+} else if(score >= 70){
+  grade = "C등급";
+} else {
+  grade = "D등급";
+}
+
+console.log(grade)
+
+
+console.log("퀴즈")
+
+// Default parameter
+const orderSandwich = (type = "basic") => {
+console.log("🚀 ~ orderSandwich ~ type:", type)
+//  if(type == 'basic') {
+//    return `🥖 + 🥬 + 🍅 + 🧀 + 🥓`;
+//  } else{
+//    return `🥖 + 🥬 + 🍅 + 🥑 + 🥒`;
+//  }
+
+// 삼항 연산자
+return type == "basic" ? `🥖 + 🥬 + 🍅 + 🧀 + 🥓` : `🥖 + 🥬 + 🍅 + 🥑 + 🥒`;
+}; 
+
+console.log("기본 샌드위치 주문: " + orderSandwich());
+console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
+console.log("비건 샌드위치 주문: " + orderSandwich('vegan'));
+
+const age = 20;
+
+const adultType = age >= 18 ?  "성인" : "미성년자" ;
+console.log("🚀 ~ dultType:", adultType);
+
+if (0) {
+  console.log("true입니다");
+} else {
+  console.log("false입니다");
+};
+
+const userInput = "";
+//if(userInput) {
+//  alert("입력해주셔서 감사합니다");
+//} else {
+//  alert("입력값을 작성해주세요");
+//};
