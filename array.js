@@ -28,8 +28,11 @@ const person = {
   name: "박성혜",
   isMale: false,
   mbti: "ENTJ",
+  favoriteFood: ["김밥", "볶음밥", "잡채"],
   age: 50
 };
 console.log("🚀 ~ person:", person);
 console.log("name:", person["name"]);
 console.log("남성여부: ", person.isMale);
+console.log("좋아하는 음식: ", person.favoriteFood);
+console.log("두번째로 좋아하는 음식: ", person.favoriteFood[1]);
