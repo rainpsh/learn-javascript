@@ -144,3 +144,45 @@ const userInput = "";
 //} else {
 //  alert("입력값을 작성해주세요");
 //};
+
+// 퀴즈1
+const add1 = (a, b) => {
+  return a + b;
+}
+console.log(add1(5, 3));
+
+// 퀴즈2
+const minus = (a, b) => {
+  return a - b;
+};
+console.log(minus(60,20));
+
+//퀴즈3
+const introduce = (name2, age) => {
+  return '안녕하세요' + name2 + '님, 당신의 나이는' + age + '세입니다';
+}
+console.log(introduce("박성혜", 51));
+
+const daysOfWeek = [
+  "월요일",
+  "화요일",
+  "수요일",
+  "목요일",
+  "금요일",
+  "토요일",
+  "일요일"
+];
+console.log("🚀 ~ daysOfWeek:", daysOfWeek);
+console.log("오늘의 요일:", daysOfWeek[1]);
+
+const idol = [
+  "장원영",
+  "안유진",
+  "리즈",
+  "레이",
+  "가을",
+  "이서"
+]
+console.log("좋아하는 멤버:", idol[0]);
+console.log("마지막 멤버:", idol.length);
+
